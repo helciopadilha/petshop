@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetShop • Agendamentos</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Agendamentos</h1>
+    <nav>
+      <a href="./index.html">Início</a>
+      <a href="./agendamentos.html" class="active">Agendamentos</a>
+      <a href="./agendamento-form.html">Novo Agendamento</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="filtros">
+      <input id="data" type="date" />
+      <button id="btnBuscarAg">Buscar</button>
+    </section>
+
+    <section>
+      <table class="tabela" id="tabela-agendamentos">
+        <thead><tr><th>Animal (id)</th><th>Serviço</th><th>Data</th><th>Hora</th><th>Status</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./service-worker.js');</script>
+</body>
+</html>

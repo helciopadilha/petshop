@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetShop • Animais</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Animais</h1>
+    <nav>
+      <a href="./index.html">Início</a>
+      <a href="./animais.html" class="active">Animais</a>
+      <a href="./animal-form.html">Cadastrar Animal</a>
+      <a href="./agendamentos.html">Agendamentos</a>
+      <a href="./login.html" class="right">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="filtros">
+      <input id="busca" placeholder="Buscar por nome" />
+      <select id="especie">
+        <option value="">Todas espécies</option>
+        <option>Cachorro</option>
+        <option>Gato</option>
+      </select>
+      <button id="btnBuscar">Buscar</button>
+    </section>
+
+    <section>
+      <table class="tabela" id="tabela-animais">
+        <thead><tr><th>Nome</th><th>Espécie</th><th>Raça</th><th>Idade</th><th>Dono (id)</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./service-worker.js');</script>
+</body>
+</html>

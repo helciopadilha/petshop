@@ -1,0 +1,23 @@
+petshop-back/
+  pom.xml
+  src/main/java/com/escola/petshop/
+    PetshopApplication.java
+    model/
+      Cliente.java
+      Animal.java
+      Agendamento.java
+    repository/
+      ClienteRepository.java
+      AnimalRepository.java
+      AgendamentoRepository.java
+    controller/
+      ClienteController.java
+      AnimalController.java
+      AgendamentoController.java
+  src/main/resources/
+    application.properties
+    static/                 # (quando acoplar o front, copie os HTML/JS/CSS aqui)
+  db/
+    01_ddl.sql
+    02_seed.sql
+  README.md

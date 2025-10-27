@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetShop • Login</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar"><h1>Login</h1></header>
+  <main class="container">
+    <form id="formLogin" class="card" onsubmit="return fazerLogin(event)">
+      <label>Email <input name="email" type="email" required></label>
+      <label>Senha <input name="senha" type="password" required></label>
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

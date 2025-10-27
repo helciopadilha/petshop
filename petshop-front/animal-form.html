@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetShop • Cadastrar Animal</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Novo Animal</h1>
+    <nav>
+      <a href="./index.html">Início</a>
+      <a href="./animais.html">Animais</a>
+      <a href="./animal-form.html" class="active">Cadastrar</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form id="formAnimal" class="card" onsubmit="return salvarAnimal(event)">
+      <label>Nome* <input name="nome" required maxlength="60"></label>
+      <label>Espécie* 
+        <select name="especie" required>
+          <option>Cachorro</option>
+          <option>Gato</option>
+        </select>
+      </label>
+      <label>Raça <input name="raca" maxlength="60"></label>
+      <label>Idade <input name="idade" type="number" min="0" max="40"></label>
+      <label>ID do Dono (cliente_id)* <input name="clienteId" type="number" required></label>
+      <button type="submit">Salvar</button>
+    </form>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./service-worker.js');</script>
+</body>
+</html>

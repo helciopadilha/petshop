@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetShop • Início</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>PetShop</h1>
+    <nav>
+      <a href="./index.html" class="active">Início</a>
+      <a href="./animais.html">Animais</a>
+      <a href="./animal-form.html">Cadastrar Animal</a>
+      <a href="./agendamentos.html">Agendamentos</a>
+      <a href="./agendamento-form.html">Novo Agendamento</a>
+      <a href="./login.html" class="right">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bem-vindo ao PetShop</h2>
+      <p>Projeto demonstrador: começamos pelo front (HTML/CSS/JS), com dados mock.</p>
+      <ul>
+        <li><a href="./animais.html">Listar animais</a></li>
+        <li><a href="./animal-form.html">Cadastrar animal</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./service-worker.js');</script>
+</body>
+</html>
